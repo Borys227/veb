@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АвтоДрайв - СТО</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: url("https://cdn.pixabay.com/photo/2020/06/01/09/46/bmw-5248526_1280.jpg")
+          no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+        backdrop-filter: brightness(0.8);
+      }
+      header {
+        background-color: rgba(0, 51, 102, 0.85);
+        padding: 30px 20px;
+        text-align: center;
+        border-bottom: 3px solid #00bfff;
+      }
+      header h1 {
+        font-size: 3em;
+        margin: 0;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      nav {
+        background-color: rgba(0, 85, 153, 0.9);
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        gap: 25px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      nav a:hover {
+        color: #00ffff;
+      }
+      .container {
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 20px;
+        border-radius: 10px;
+      }
+      h2 {
+        color: #00bfff;
+      }
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .service {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid #00bfff;
+        padding: 20px;
+        flex: 1 1 30%;
+        border-radius: 10px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+      .service:hover {
+        transform: scale(1.05);
+        background-color: rgba(0, 191, 255, 0.2);
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .gallery img {
+        width: 300px;
+        border-radius: 8px;
+        border: 2px solid #00bfff;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #00bfff;
+        color: white;
+        padding: 12px 24px;
+        margin-top: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #0099cc;
+      }
+      footer {
+        background-color: rgba(0, 51, 102, 0.85);
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        border-top: 2px solid #00bfff;
+      }
+      .fade-in {
+        animation: fadeIn 1.5s ease-in;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="fade-in">
+      <h1>АвтоДрайв</h1>
+      <p>Ваш надійний автосервіс BMW та інших марок</p>
+    </header>
+
+    <nav>
+      <a href="#about">Про нас</a>
+      <a href="#services">Послуги</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+
+    <div class="container fade-in">
+      <section id="about">
+        <h2>Про нас</h2>
+        <p>
+          СТО "АвтоДрайв" спеціалізується на обслуговуванні BMW та інших
+          брендів. Ми працюємо з 2010 року, і наша команда — це сертифіковані
+          майстри, які дбають про кожне авто.
+        </p>
+        <a href="#contacts" class="cta-button">Записатися онлайн</a>
+      </section>
+
+      <section id="services">
+        <h2>Наші послуги</h2>
+        <div class="services">
+          <div class="service">
+            <h3><a href="diagnostics.html">Діагностика</a></h3>
+            <p>Сучасне обладнання для точної перевірки BMW та інших авто.</p>
+          </div>
+          <div class="service">
+            <h3><a href="oil-change.html">Заміна масла</a></h3>
+            <p>Оригінальні матеріали, швидка робота, гарантія якості.</p>
+          </div>
+          <div class="service">
+            <h3><a href="suspension-repair.html">Ремонт ходової</a></h3>
+            <p>Професійний ремонт підвіски, гальмівної системи та інше.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Фотогалерея</h2>
+        <div class="gallery">
+          <img
+            src="ChatGPT Image 29 трав. 2025 р., 23_10_49.png"
+            alt="BMW з логотипом АвтоДрайв"
+          />
+          <img src="ChatG ремонт підв.png" alt="BMW ремонт підвіски" />
+          <img src="ChatG технік.png" alt="СТО АвтоДрайв в роботі" />
+        </div>
+      </section>
+
+      <section id="contacts">
+        <h2>Контакти</h2>
+        <p>📍 м. Київ</p>
+        <p>📞 +38 (099) 44-0-20-36</p>
+        <p>📧 info@avtodrive.ua</p>
+        <a href="mailto:info@avtodrive.ua" class="cta-button"
+          >Записатися на сервіс</a
+        >
+      </section>
+    </div>
+
+    <footer class="fade-in">
+      <p>&copy; 2025 АвтоДрайв. Всі права захищені.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".fade-in").forEach((el) => {
+          el.style.opacity = 0;
+          setTimeout(() => {
+            el.style.transition = "opacity 2s ease";
+            el.style.opacity = 1;
+          }, 300);
+        });
+      });
+    </script>
+  </body>
+</html>
