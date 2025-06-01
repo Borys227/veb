@@ -10,11 +10,11 @@
     a.async=1;
     a.src=g;
     m.parentNode.insertBefore(a,m);
-})(window,document,'script','https://www.googletagmanager.com/gtag/js?id=YOUR_MEASUREMENT_ID','ga');
+})(window,document,'script','https://www.googletagmanager.com/gtag/js?id=G-B0CC46QZSB','ga');
 
 // Ініціалізація Google Analytics
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
-gtag('config', 'YOUR_MEASUREMENT_ID');
+gtag('config', 'G-B0CC46QZSB');
